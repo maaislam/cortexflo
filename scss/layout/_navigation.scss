@@ -1,0 +1,115 @@
+
+
+.nav{
+    
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+   
+    width: 100vw;
+    justify-content:space-between;
+    top: 0%;
+    left: 0%;
+    z-index: 500;
+    align-items: center;
+    padding: 1rem 0rem 1rem 3rem;
+    transition: all 0.5s ;
+    
+    /*Navigation background*/
+    background-color: rgba(255, 255, 255, 0.219);
+            @include respond(tab-land){
+                background-color: rgba(255, 255, 255, 0);
+                
+            
+            }
+
+    transition: all 0.5s 0s ease-in-out;
+   
+    &__link-container{
+        flex: auto initial;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 0.5rem;
+        margin: 0 3rem 0.5rem -20rem;
+        @include respond(tab-land){display: none;}
+    }
+
+    &__link-container a{
+        display: inline-block;
+        border-radius: 3px;
+         padding: 1rem;
+       font-weight: 600;
+       text-decoration: none;
+       text-transform: uppercase;
+       font-size: 1.4rem;
+       color: black;
+       transition: all 0.4s;
+       background: linear-gradient(120deg, transparent 0%, transparent 50%,  #AA1D5C 50%);
+            
+            background-size:250%;
+            
+          
+
+           
+       
+       &:hover{
+            background-position: right center;
+            color: rgb(255, 255, 255);
+            //font-size: 1.5rem;
+             //transform: translateX(-0.3rem)
+        }
+
+
+    }
+
+
+    &__logo-container{
+        
+        & img{
+            width: 50%;
+            height: auto;
+            transition: all 0.5s ;
+        }
+        @include respond(tab-land){padding-top: 1.0rem;}
+    }
+
+    &__logo-container i{
+
+       font-size: 4.0rem;
+       color: white;
+       @include phoenix-color;
+       transition: all 0.5s 0s ease-in-out;
+
+       padding-bottom: 2rem;
+       
+           
+    }
+}
+
+
+
+
+.nav-link{
+
+    background-color: rgb(46, 46, 46);
+   
+    padding-top: 1rem;
+    padding-bottom: 0;
+    backface-visibility: hidden;
+    transition: all 0.5s ;
+    & a{
+        color: rgb(255, 255, 255);
+        //font-weight: 400;
+        font-size: 1.2rem;;
+        transition: all 0.5s ;
+       
+    }
+    
+}
+
+.nav-logo img{
+
+    width: 40%;
+    transition: all 0.5s ;
+
+}

@@ -1,0 +1,60 @@
+
+
+
+
+.pagination{
+
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    transform: translate(-1%, -50%);    
+
+ 
+}
+ 
+.pagination__list{
+    
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+    
+}
+
+
+.pagination__list-item{
+    list-style: none;
+    
+}
+
+
+.pagination__list-item span {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 8px;
+    height:8px;
+    border-radius: 50%;
+    margin: 1rem;
+    border:2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    
+    &:hover, &:visited{
+        background-color: black;
+        transform: scale(1.5) translateY(-0.1rem);
+
+        
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+
+    }
+
+    &:active{
+
+    
+                transform: translateY(-.1rem);
+    
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+    }
+
+    
+}
+
