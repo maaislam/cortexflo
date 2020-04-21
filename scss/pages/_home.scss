@@ -2,7 +2,7 @@
 
 
 
-.section1{
+.s1{
 
     
     @include primary-padding;
@@ -109,9 +109,9 @@
 
 
 
-/*Style for  section 2 & 3 & 4*/
+/*Style for  s 2 & 3 & 4*/
 
-.section2, .section3, .section4{
+.s2, .s3, .s4{
 
 
     background-color:#F1F4F8 ;
@@ -224,11 +224,11 @@
 
 
 
-/*Section 5 style*/
+/*s 5 style*/
 
 
 
-.section5{
+.s5{
     background-color: white;
     @include primary-padding;
     
