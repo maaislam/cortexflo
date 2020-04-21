@@ -16,7 +16,7 @@
         background-color: rgb(255, 255, 255);
         z-index: -1;
         & img{
-            filter:drop-shadow(8px 8px 10px gray);
+            filter:drop-shadow(8px 8px 10px gray) brightness(1.2);
             width: 100%;
             height: auto;
         }
@@ -109,12 +109,20 @@
     &-text a{
         backface-visibility: hidden;
         position: relative;
-        margin-right: 3rem;
         transition: all 0.5s;
+        &:first-child{
+            margin-right: 2rem;
+        }
     }
 
 
 
-    
+    .butn-container{
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+
+       
+    }
 
 }
