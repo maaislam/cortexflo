@@ -134,8 +134,8 @@
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 1.2rem;
-    padding: 1rem 2rem ;
+    font-size: 1.5rem 2.5rem;
+    padding: 1rem 3rem ;
     
     transition: all 0.5s;
     cursor: pointer;
@@ -164,7 +164,7 @@
   .button:hover{
  
     & span {
-        transform: translateX(-1.0rem);
+        transform: translateX(-1.5rem);
   }
 
     
@@ -175,3 +175,82 @@
     opacity: 1;
     right: -1.0;
   }
+
+
+  .proj_btn{
+  
+    display: flex;
+    flex-wrap: nowrap;
+      padding: 2rem ; 
+      padding-left: 0;
+        transition: all .2s;
+      @include respond(tab-land){
+          padding-top: 7rem;
+      }
+      @include respond(phone){
+         padding-right: 0rem;
+      }
+     
+      .button2{
+          margin-left: 3rem;
+      }
+      
+      &__style{
+          padding-right: 2rem;
+          font-size: 1.3rem;
+          color: white;
+          background-image: linear-gradient(to right, #e43a15 0%, #e65245 51%, #e43a15 100%);
+          padding: 0.5rem 2rem 1rem 2rem;
+          display: inline-block;
+          text-decoration: none;
+          -webkit-transition: all .1s;
+          transition: all .2s;
+          border-radius: 3px;
+          
+          @include respond(phone){
+              font-size: 1.8rem;
+          }
+  
+          & span{
+              
+              font-size: 1.8rem; 
+              -webkit-transition: all .1s;
+              transition: all .2s;
+              display: inline-block;
+          }
+  
+          &:hover{
+  
+              -webkit-transform: translateY(-.3rem);
+  
+              transform: translateY(-.3rem) ;
+  
+  
+              box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+  
+              & span{
+                 
+  
+                  transform: translateX(0.7rem) scale(1.1);
+                  font-weight: 600;
+              }
+  
+          }
+  
+  
+  
+          &:active{
+  
+              -webkit-transform: translateY(-.1rem);
+          
+                      transform: translateY(-.1rem);
+          
+              box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+          }
+  
+  
+          
+      }
+      
+  }
+  
