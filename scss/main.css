@@ -2247,6 +2247,80 @@ li.pagination__list-item {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
+#location__cac {
+  padding: 7rem 23rem;
+}
+
+#location__cac .text-center {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+#location__cac h2 {
+  padding-bottom: 2rem;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-gradient(linear, right top, left top, from(#5C6977), to(#AA1D5C));
+  background: linear-gradient(to left, #5C6977, #AA1D5C);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+#location__cac h3 span {
+  color: #AA1D5C;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.h-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 7px;
+  background: linear-gradient(145deg, #e4e5e6, #ffffff);
+  -webkit-box-shadow: 8px 8px 16px #9a9b9c,  -8px -8px 16px #ffffff;
+          box-shadow: 8px 8px 16px #9a9b9c,  -8px -8px 16px #ffffff;
+}
+
+.h-entry > * {
+  padding-bottom: 1.5rem;
+}
+
+.h-entry img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.h-entry h3 {
+  color: #AA1D5C;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.h-entry p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 /**
  * Swiper 5.3.6
  * Most modern mobile touch slider and framework with hardware accelerated transitions
