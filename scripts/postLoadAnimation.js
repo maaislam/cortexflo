@@ -1096,7 +1096,7 @@ $(document).ready(function(){
 		
 		var round1 =Math.round( offsets1.top);
 		console.log(round1-height);
-	 	if((round1-height<150 && round1-height>-4285)) {
+	 	if((round1-height<150 && round1-height>-3500)) {
 
 			
 			$('.dot1').addClass('active1');
@@ -1113,7 +1113,7 @@ $(document).ready(function(){
 		
 		var round2 =Math.round( offsets2.top);
 		
-	 	if((round2-height<150 && round2-height>-650)) {
+	 	if((round2-height<50 && round2-height>-630)) {
 
 			
 			$('.dot2').addClass('active1');
@@ -1152,7 +1152,7 @@ $(document).ready(function(){
 		
 	var round4 =Math.round( offsets4.top);
 	
-	 if((round4-height<150 && round4-height>-2600)) {
+	 if((round4-height<150 && round4-height>-2300)) {
 
 		
 		$('.dot4').addClass('active1');
@@ -1171,7 +1171,7 @@ $(document).ready(function(){
 							
 					var round5 =Math.round( offsets5.top);
 
-					if((round5-height<150 && round5-height>-650)) {
+					if((round5-height<150 && round5-height>-400)) {
 
 						
 						$('.dot5').addClass('active1');
@@ -1180,6 +1180,24 @@ $(document).ready(function(){
 
 						
 						$('.dot5').removeClass('active1');
+
+					}
+					/************************For dot 6 s9*******************/
+
+
+					var offsets6 = $('#s9').offset();
+							
+					var round6 =Math.round( offsets6.top);
+
+					if((round6-height<150 && round6-height>-550)) {
+
+						
+						$('.dot6').addClass('active1');
+
+					} else {
+
+						
+						$('.dot6').removeClass('active1');
 
 					}
 

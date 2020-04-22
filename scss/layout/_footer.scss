@@ -1,126 +1,159 @@
 
 .footer{
 
-    
-    background-color: #212121;
-    padding: 0.5rem 15rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-self: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5rem;
+    font-size: 1.3rem;
 
-    @include respond(tab-land){
+    &__logo{
 
-            padding: 0.5rem 15rem;
-    }
-    @include respond(tab-land){
-
-            padding: 0.5rem 10rem;
+        width: 20rem;
+        height: auto;
     }
 
-        & > *{
+    &__logo-box{
 
-            padding-bottom: 1.5rem;
-            padding-top: 1.5rem;
-        }
-
-        & span{
-            font-size: 3rem;
-            font-family: 'Dancing Script', cursive;
-        }
-
-}
-
-
-
-
-
-
-.footer__logo-box a{
-   font-size: 4rem ;
-   text-decoration: none;
-   list-style: none;
-   @include phoenix-color;
-   text-align: center;
-}
-
-.footer__list{
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0rem;
-    list-style: none;
-        @include respond(tab-land){
-
-            gap: 1.5rem;
-        }
-
-    & a{
-
-        font-size: 1.4rem;
-        text-decoration: none;
-        color: white;
-    }
-    
-}
-
-.footer__social{
-
-    font-size: 4rem;
-    text-align: right;
-    padding-right: 3rem;
-
-    @include respond(tab-land){ 
         text-align: center;
-        padding-right: 0;
-    }
 
-    & i{
-        padding-right: 2rem;
-    }
-}
+        & img{
 
-
-
-.footer__link{
-    &:link,
-        &:visited{
-
-            text-decoration: none;
-            text-transform: uppercase;
-      
+            filter: brightness(1.5);
         }
+    }
+
+    &__list{
+        list-style: none;
+        
+        display: -webkit-box;
+        
+        display: flex;
+        -webkit-box-pack: space-evenly;
+                justify-content: space-evenly;
+        margin-right: 20rem;
+
+        @include respond(tab-port){
+            margin-right: -3rem;
+        }
+        @include respond(phone){
+
+    
+        }
+      
+ 
+    }
+
+    
+
+    &__row{
+
+        padding-top: 0rem;
+        text-align: right;
+
+        @include respond(tab-port){
+            margin-left: -5rem;
+            margin-right: 0;
+        }
+        @include respond(phone){
+            margin-left: -3rem;
+        }
+        @include respond(phone-small){
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column;
+            margin-top: 0rem;
+            margin-left: 2rem;
+            font-size: 1.6rem;
+        }
+        
+
+    }
+    
+
+  
 
    
-}
+    &__link{
+        &:link,
+        &:visited{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: whitesmoke;
+        display: inline-block;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
 
-.footer__list li{
+        
+
+        @include respond(tab-port){
+            padding: 0rem;
+        }
+        @include respond(phone){
+            padding: 0.5rem;
+        }
+    }
 
     &:hover,
     &:active{
-        @include phoenix-color;
-       transform: scaleX(1.3);
-        transition: all 0.5s;
+        color: rgba(40, 180, 131, 0.8);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+        -webkit-transform: rotate(5deg) scale(1.3);
+                transform: rotate(5deg) scale(1.3);
     }
     
+    }
+    &__col2{
 
+        padding-top: 1.2rem;
+    }
+    &__col1{
+
+        padding-top: 5rem;
+
+
+        @include respond(phone-small){
+            padding-top: 1rem;
+            margin-top: 1rem;
+         }
+    }
 
 }
+
 .footer__social{
 
-    
+    display: -webkit-box;
 
-   
+    display: flex;
+    -webkit-box-pack: right;
+            justify-content: right;
+    padding-right: 13.5rem;
+
+    @include respond(tab-port){
+        padding-left: 7.5rem;
+        padding-right: 7rem;
+    }
+    @include respond(phone){
+        padding-right: 2rem;
+        margin-right: 6rem;
+    }
 
 
 
+
+    &-image{
+
+        width: 4rem;
+        height: auto;
+        margin:0 0.5rem;
+        color: white;
+    }
 
     &-link{
 
         &:link,
         &:visited{
         color: white;
-        
+        font-size: 4rem;
+        margin: 1.2rem;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
         }
@@ -143,7 +176,7 @@
     &-link:nth-child(2){
     &:hover,
     &:active{
-        color: #6e5494;
+        color: #e4405f;
         text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
         -webkit-transform:  scale(1.3);
                 transform:  scale(1.3);
@@ -181,8 +214,3 @@
     }
 }
 
-
-.credit{
-
-    font-size: 1.0rem;
-}

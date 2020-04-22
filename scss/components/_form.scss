@@ -1,166 +1,163 @@
-   /*Simple Contact Form*/
+.s9__heading{
 
-   .contact-form{
+@include cortexflo-color;
+text-align: center;
 
-    background-image: url(/images/wave.svg);
-    background-repeat: no-repeat;
+}
+.main__section-book{
+
+    padding: 8rem 10rem;
+    background-color:#F1F4F8 ;
+}
+
+.main__section-book-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  
+  .main__section-book-box .form-head {
+    margin-top: 6rem;
+    background-color: white;
+  }
+
+  .booking-form {
+    background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.466) 0%, rgba(255, 255, 255, 0.8) 55%, transparent 50%), url(/image/form.jpg);
     background-size: cover;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 10rem;
-    //flex-wrap: nowrap;
-    width: 100%;
-    @include primary-padding;
-    justify-content: space-between;
-    
-        @include respond(tab-land){
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+    height: auto;
+    margin: 10rem 15rem;
+    padding: 5rem 3rem;
+  }
+  
+.form{
 
-            padding: 8rem 20rem;
+    &__group{
+
+        margin-right: 55rem;
+
+        @include respond(tab-port){
+            margin-right: 40rem;
         }
-                @include respond(phone){
+        @include respond(phone){
+            margin-right: 25rem;
+        }
+        @include respond(phone-small){
+            margin-right: 2rem;
+            padding-left: 1rem;
+            
+        }
+    }
 
-                    padding: 8rem 6rem;
-                }
+    &__group:not(:last-child){
+
+        margin-top: 2rem;
 
         
-  
+    }
+        &__heading{
 
-    &__text{
+            font-size: 2.5rem;
+            padding-left: 3.5rem;
+            padding-top: 2rem;
+        }
+    
 
-       & h2{
-        display: inline;
-        color:black;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-        padding-bottom: 1.5rem;
-        font-weight: 600;
-            @include respond(tab-port){
-                
-                font-size: 2.8rem ;
-                line-height: 2.5rem;
-            }
-                @include respond(phone){
-                    
-                    font-size: 3rem ;
-                    line-height: 2.5rem;
-                }
+    &__input{
 
+        font-size: 1.3rem;
+        font-family: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+        border-bottom: 3px solid transparent;
+        display: block;
+        box-shadow: none;
+        width: 100%;
+        display: block;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+       
+        @include respond(phone-small){
+            
+            font-size: 1.8rem;
+        }
+
+        &:focus{
+
+            outline: none;
+            border-bottom: 3px solid rgba(40, 180, 131, 0.8);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+        }
+
+       
+        &:focus:invalid{
+            
+            border-bottom: 3px solid orangered;
+            outline: none;
+            
+        }
+
+        &::-moz-input-placeholder{
+
+            color: #999;
+
+        }
+        
     }
 
-    & p{
-        padding-top: 3rem;
- 
- 
-        @include respond(tab-port){
-             
-         font-size: 2rem ;
-         line-height: 3rem;
-         }
-        @include respond(phone){
-             
-         font-size: 2rem ;
-         line-height: 3rem;
-         }
- 
+    &__label{
+
+        font-size: 1.0rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: 0.7rem;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        display: block;
+       
+        
+        
     }
 
+
+     &__input:placeholder-shown + &__label{
+
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translateY(-4rem);
+                transform: translateY(-4rem);
     }
 
-    &__details{
+    
+    
+}
 
-        position: relative;
+
+.main__submit-button{
+
+   padding-top: 3rem;
+    
+   @include respond(phone-small){
+    
+    padding-top: 5rem;
+    padding-left: 12rem;
+    
     }
 }
 
-  
-
-                .form__input{
-                    
-                    font-size: 1.3rem;
-                    font-family: inherit;
-                    padding: 1.5rem 2rem;
-                    border-radius: 2px;
-                    background-color: rgb(255, 255, 255);
-                    border: none;
-                    border-bottom: 3px solid rgba(71, 71, 71, 0.534);
-                    display: block;
-                    box-shadow: none;
-                    width: 100%;
-                    transition: all 0.5s;
-                    box-shadow:
-                    0 0px 26.9px -18px rgba(0, 0, 0, 0.049),
-                    0 0px 31.5px -18px rgba(0, 0, 0, 0.076),
-                    0 0.1px 33.5px -18px rgba(0, 0, 0, 0.097),
-                    0 0.5px 36px -18px rgba(0, 0, 0, 0.124),
-                    0 2.2px 42.2px -18px rgba(0, 0, 0, 0.175),
-                    0 31px 80px -18px rgba(0, 0, 0, 0.32);
-                }
-
-                    .form__input:focus{
-
-                        outline: none;
-                        border-bottom: 3px solid rgba(40, 180, 131, 0.8);
-                        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
-                       
-                    }
-            
-                   
-                    .form__input:focus:invalid{
-                        
-                     //sborder-bottom: 3px solid orangered;
-                        outline: none;
-                        
-                    }
-
-                    .form__input:invalid{
-                        
-                        outline: none;
-                    }
-            
-                    .form__input::-moz-input-placeholder{
-            
-                        color: rgb(187, 173, 45);
-            
-                    }
-            
-
-               
-
-                .form__label{
-
-                    font-size: 1.3rem;
-                    
-                    margin-left: 2rem;
-                    margin-top: 0.7rem;
-                    -webkit-transition: all 0.5s;
-                    transition: all 0.5s;
-                    display: block;
-
-                }
-
-                .form__input:placeholder-shown + .form__label{
-
-                    opacity: 0;
-                    visibility: hidden;
-                    -webkit-transform: translateY(-4rem);
-                            transform: translateY(-4rem);
-                }
-
-
-                .main__submit-button{
-                    position: relative;
-                    display: inline-block;
-                    margin-top: 2rem;
-                }
-.submit{
-
-font-size: 1.8rem;
-text-transform: uppercase;
-    text-decoration: none;
-    padding: 1rem 3rem;
-    display: inline-block;
-    border-radius: 5rem;
-    transition: all .1s;
-    border: none;
-    cursor: pointer;
+.form__radio-label{
+    @include respond(phone-small){
+        padding: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    }
+    
 }
