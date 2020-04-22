@@ -1,0 +1,83 @@
+
+
+.s7{
+
+    background-color:#F1F4F8 ;
+    @include primary-padding;
+
+
+    &__heading{
+
+        text-align: center;
+        @include cortexflo-color;
+        padding-bottom: 5rem;
+
+
+    }
+
+    &__container{
+        padding-left: 2rem;
+
+        &-hardware {
+           
+            display: inline-block;
+            border-bottom: 2px solid #AA1D5C;
+            padding-bottom: 2rem;
+            & h3 {
+                font-size: 2.5rem;
+            }
+          
+        }
+
+    }
+
+
+
+
+}
+
+
+
+/*patch*/
+
+.apply-flex{
+
+
+    border-bottom: 1px solid rgba(92, 105, 119, 0.5);
+
+    padding:5rem 0rem;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+   
+   
+    & li{
+        
+           list-style: disc;    
+        }
+    }
+
+
+
+
+
+    .software{
+
+        .s7__container-software{
+            display: inline-block;
+            padding-top: 5rem;
+            
+            border-bottom: 2px solid #AA1D5C;
+            padding-bottom: 2rem;
+            & h3 {
+                font-size: 2.5rem;
+            }
+            
+           
+
+        }
+
+
+
+
+    }

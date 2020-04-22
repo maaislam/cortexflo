@@ -1126,22 +1126,66 @@ $(document).ready(function(){
 
 
 
+	/************************For dot3 s6*******************/
 
-
-
-
-
-
-
-
-
-
-		/************************For S3*******************/
+	var offsets3 = $('#s6').offset();
+		
+	var round3 =Math.round( offsets3.top);
+	
+	 if((round3-height<150 && round3-height>-650)) {
 
 		
+		$('.dot3').addClass('active1');
+
+	} else {
 
 		
-		/************************For S4*******************/
+		$('.dot3').removeClass('active1');
+	}
+
+
+
+
+	/************************For S4*******************/
+
+	var offsets4 = $('#s7').offset();
+		
+	var round4 =Math.round( offsets4.top);
+	
+	 if((round4-height<150 && round4-height>-3500)) {
+
+		
+		$('.dot4').addClass('active1');
+
+	} else {
+
+		
+		$('.dot4').removeClass('active1');
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		
 
