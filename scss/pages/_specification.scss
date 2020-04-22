@@ -59,6 +59,25 @@
 
 
 
+    .apply-grid{
+
+
+        border-bottom: 1px solid rgba(92, 105, 119, 0.5);
+    
+        padding:5rem 0rem;
+       
+        display: grid;
+        grid-template-columns:0.33fr 0.67fr;
+        justify-self: left;
+        gap: 0;
+        align-items: center;
+       
+       
+        & li{
+            
+               list-style: disc;    
+            }
+        }
 
 
     .software{
@@ -66,7 +85,7 @@
         .s7__container-software{
             display: inline-block;
             padding-top: 5rem;
-            
+         
             border-bottom: 2px solid #AA1D5C;
             padding-bottom: 2rem;
             & h3 {

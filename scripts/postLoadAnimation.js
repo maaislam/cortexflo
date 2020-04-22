@@ -1146,13 +1146,13 @@ $(document).ready(function(){
 
 
 
-	/************************For S4*******************/
+	/************************For dot 4 s7*******************/
 
 	var offsets4 = $('#s7').offset();
 		
 	var round4 =Math.round( offsets4.top);
 	
-	 if((round4-height<150 && round4-height>-3500)) {
+	 if((round4-height<150 && round4-height>-2600)) {
 
 		
 		$('.dot4').addClass('active1');
@@ -1164,30 +1164,26 @@ $(document).ready(function(){
 	}
 
 
+					/************************For dot 5 s8*******************/
 
 
+					var offsets5 = $('#s8').offset();
+							
+					var round5 =Math.round( offsets5.top);
+
+					if((round5-height<150 && round5-height>-650)) {
+
+						
+						$('.dot5').addClass('active1');
+
+					} else {
+
+						
+						$('.dot5').removeClass('active1');
+
+					}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
 
 
 
