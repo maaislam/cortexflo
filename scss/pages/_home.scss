@@ -4,7 +4,11 @@
 
 .s1{
 
+
+    
     background-color: #F1F4F8;
+
+
     @include primary-padding;
 
     &__product{
@@ -221,7 +225,14 @@
 }
 
 
+.s4{
 
+    background-image: url(/image/wave1.svg);;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+}
 
 
 /*s 5 style*/
@@ -229,9 +240,14 @@
 
 
 .s5{
+    background-image: url(/image/wave2.svg);;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto;
+  
     background-color: rgba(207, 207, 207, 0.301);
     @include primary-padding;
-    
+   
 
     &__heading{
 
@@ -260,6 +276,7 @@
     &__container{
 
         padding-top: 5rem;
+        padding-bottom: 5rem;
         display: grid;
         grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
         gap: 0;
@@ -301,17 +318,6 @@
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

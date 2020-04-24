@@ -42,6 +42,11 @@
     background: linear-gradient(145deg, #e4e5e6, #ffffff);
     box-shadow:  8px 8px 16px #9a9b9c, 
                  -8px -8px 16px #ffffff;
+
+    
+
+
+                 
     &>*{
         padding-bottom: 1.5rem;
     }
@@ -54,11 +59,16 @@
 
     & h3{
 
-        color: #AA1D5C;
+       
         font-weight: 500;
         font-size: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    & a{
+        
+        color: #91145a;
     }
 
 

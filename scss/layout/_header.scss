@@ -1,26 +1,31 @@
 .header__landing {
 
+
+
     position: relative;
     
     height: 100vh;
+    background-image: url(/image/wave.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto;
     
-
+    
     &-image  {
             
         position: absolute;
-       
-        top: 35%;
+        padding-bottom: 3rem;
+        top: 27%;
         left: 50%;
-        transform: translate(-35%, -50%);
-       
+        transform: translate(-27%, -50%);
         background-color: rgb(255, 255, 255);
-        z-index: -1;
+        z-index: 1;
         & img{
             filter:drop-shadow(8px 8px 10px gray) brightness(1.2);
             width: 100%;
             height: auto;
         }
-              
+
         
         @include respond(tab-port){
             
@@ -32,9 +37,10 @@
 
     &-text {
         position: absolute;
-        top: 70%;
+        padding-bottom: 7rem;
+        top: 50%;
         left: 20%;
-        transform: translate(-20%, -70%);
+        transform: translate(-20%, -50%);
                      @include respond(phone){
                       width: 100%;
                       padding:1.5rem;
@@ -95,7 +101,9 @@
 
     &-text h1 span {
         @include cortexflo-color;
+        
     }
+    
 
     &-text h4 {
       
@@ -124,5 +132,6 @@
 
        
     }
+
 
 }
