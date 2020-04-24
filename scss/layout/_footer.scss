@@ -31,7 +31,7 @@
                 justify-content: space-evenly;
         margin-right: 20rem;
 
-        @include respond(tab-port){
+        @include respond(tab-land){
             margin-right: -3rem;
         }
         @include respond(phone){
@@ -84,7 +84,7 @@
 
         
 
-        @include respond(tab-port){
+        @include respond(tab-land){
             padding: 0rem;
         }
         @include respond(phone){
@@ -127,9 +127,9 @@
             justify-content: right;
     padding-right: 13.5rem;
 
-    @include respond(tab-port){
+    @include respond(tab-land){
         padding-left: 7.5rem;
-        padding-right: 7rem;
+        padding-right: 5rem;
     }
     @include respond(phone){
         padding-right: 2rem;

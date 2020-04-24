@@ -5,7 +5,10 @@
 
 
     @include primary-padding;
-
+    @include respond(tab-land){
+        @include primary-tab-padding;
+           
+       }
 }
 
 .s8__heading{

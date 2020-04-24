@@ -6,11 +6,14 @@
   position: fixed;
 
   top: 50%;
-             right: 2%;
+  right: 2%;
 
   &__list{
 
-    
+    @include respond(tab-land){
+      display: none;
+      
+  }
 
 
     &-item{

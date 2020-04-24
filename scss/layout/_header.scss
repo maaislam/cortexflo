@@ -24,13 +24,16 @@
             filter:drop-shadow(8px 8px 10px gray) brightness(1.2);
             width: 100%;
             height: auto;
+
+
+            @include respond(tab-land){
+                width: 80%; 
+                
+            }
         }
 
         
-        @include respond(tab-port){
-            
-            
-        }
+      
     }
 
     
