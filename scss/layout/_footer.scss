@@ -35,7 +35,7 @@
             margin-right: -3rem;
         }
         @include respond(phone){
-
+            margin-right: 0rem;
     
         }
       
@@ -54,17 +54,10 @@
             margin-right: 0;
         }
         @include respond(phone){
-            margin-left: -3rem;
+            margin-left: -1rem;
+            text-align: center;
         }
-        @include respond(phone-small){
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                    flex-direction: column;
-            margin-top: 0rem;
-            margin-left: 2rem;
-            font-size: 1.6rem;
-        }
-        
+      
 
     }
     
@@ -88,7 +81,7 @@
             padding: 0rem;
         }
         @include respond(phone){
-            padding: 0.5rem;
+          
         }
     }
 

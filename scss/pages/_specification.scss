@@ -9,6 +9,10 @@
        @include primary-tab-padding;
           
       }
+    @include respond(phone){
+       @include primary-phone-padding;
+          
+      }
     &__heading{
 
         text-align: center;
@@ -57,6 +61,12 @@
                     @include respond(tab-port){
                         
                         grid-template-columns: 0.2fr 0.4fr 0.4fr;
+                    }
+                    @include respond(phone){
+                        padding-left: 2rem;
+                        align-items: flex-start;
+                        display: flex;
+                        flex-direction: column;
                     }
                     
    

@@ -4,15 +4,25 @@
 text-align: center;
 @include primary-padding;
 padding-top: 0;
+
 @include respond(tab-land){
     @include primary-tab-padding;
        
    }
+@include respond(phone){
+    @include primary-phone-padding;
+       
+   }
+
 }
 .main__section-book{
 
     padding: 8rem 10rem;
     background-color:#F1F4F8 ;
+    @include respond(phone){
+        @include primary-phone-padding;
+           
+       }
 }
 
 .main__section-book-box {
@@ -53,6 +63,12 @@ padding-top: 0;
 
            
        }
+    @include respond(phone){
+        background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.466) 0%, rgba(255, 255, 255, 0.8) 100%, transparent 70%), url(/image/form.jpg);
+        padding: 5rem 1rem 5rem 1rem;
+
+           
+       }
   }
   
 .form{
@@ -65,13 +81,9 @@ padding-top: 0;
             margin-right: 20rem;
         }
         @include respond(phone){
-            margin-right: 25rem;
+            margin-right: 0rem;
         }
-        @include respond(phone-small){
-            margin-right: 2rem;
-            padding-left: 1rem;
-            
-        }
+       
     }
 
     &__group:not(:last-child){

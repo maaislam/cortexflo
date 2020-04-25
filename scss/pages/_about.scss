@@ -9,6 +9,10 @@
         @include primary-tab-padding;
            
        }
+    @include respond(phone){
+        @include primary-phone-padding;
+           
+       }
 }
 
 .s8__heading{

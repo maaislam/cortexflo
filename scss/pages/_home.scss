@@ -5,16 +5,21 @@
 .s1{
 
 
-    
+    @include primary-padding;
     background-color: #F1F4F8;
-
+    overflow-x: hidden;
 
                     @include respond(tab-land){
                         @include primary-tab-padding;
                         
                     }
+                    @include respond(phone){
+                        @include primary-phone-padding;
+                        
+                        border-bottom: 2px solid rgba(0, 0, 0, 0.301);
+                    }
 
-    @include primary-padding;
+   
 
     &__product{
 
@@ -51,6 +56,11 @@
                     padding-right: 10rem;
                     
                 }
+                @include respond(phone){
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    
+                }
             }
 
 
@@ -67,20 +77,35 @@
             justify-content: space-around;
             gap: 0;
 
+
+            @include respond(phone){
+               display: flex;
+               flex-direction: column;
+                
+            }
+
             & img{
                filter:drop-shadow(8px 8px 10px gray) brightness(1.2);
-                width: 100%;
+                width: 90%;
                 height: auto;
+
+                @include respond(phone){
+                   width: 80%;
+                     
+                 }
             }
+
+
 
             & p{
                 display: block;
-                margin: 0 0 0 -8rem;
-                padding-left: 8rem;
+                margin: 0 0 0 -4rem;
+                padding-left: 4rem;
                 border-left: 2px solid #AA1D5C;
                 @include respond(tab-land){
                     padding-left:2rem;
                     margin: 0 0 0 -2rem;  
+                    border: none;
                    }
                 
             }
@@ -99,11 +124,22 @@
             justify-content: space-between;
             gap: 5rem;
 
+            @include respond(phone){
+                display: flex;
+                flex-direction: column-reverse;
+                 
+             }
+                
             & img{
                filter:drop-shadow(8px 8px 10px gray) brightness(1.2);
-                width: 100%;
+                width: 90%;
                 height: auto;
                 margin: 0 0rem 0 8rem;
+                @include respond(phone){
+                    padding-top: 6rem;
+                    width: 80%;
+                      
+                  }
             }
 
             & p{
@@ -115,6 +151,11 @@
                 @include respond(tab-land){
                     padding-right:1rem;
                     margin-right: -6rem;  
+                   }
+                @include respond(phone){
+                    padding-right:1rem;
+                    margin-right: -2rem;  
+                    border: none;
                    }
                 
             }
@@ -136,13 +177,18 @@
 
     background-color:#F1F4F8 ;
     @include primary-padding;
-
+    overflow-x: hidden; 
     @include respond(tab-port){
         @include primary-tab-padding;
-           
+       
        }
        
-
+       @include respond(phone){
+        @include primary-phone-padding;
+        text-align: center;
+       
+        border-bottom: 2px solid rgba(0, 0, 0, 0.301);
+    }
 
     &__heading{
 
@@ -151,11 +197,13 @@
 
         & > *{
             padding-bottom: 2rem;
+           
         }
 
         & h2{
 
             @include cortexflo-color;
+           
 
         }
 
@@ -174,7 +222,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
-
+   
 
         &--col1-of-3{
             
@@ -200,6 +248,10 @@
                   width: 50%;
                     
                 }
+                @include respond(phone){
+                  width: 70%;
+                    
+                }
             }
         }
         &--col3-of-3{
@@ -220,7 +272,14 @@
         display: flex;
         justify-content: safe;
         padding-bottom: 1rem;;
-    
+
+            @include respond(phone){
+                
+                justify-content: center;
+                
+            }
+
+
         & i, & ion-icon{
             font-size: 3rem;
             padding-right: 2rem;
@@ -249,6 +308,11 @@
                 width: 50%;
                   
               }
+              @include respond(phone){
+               
+                width: 70%;
+                
+            }
         }
     }
     
@@ -285,6 +349,10 @@
         @include primary-tab-padding; 
         
     }
+    @include respond(phone){
+        @include primary-phone-padding; 
+        
+    }
 
     &__heading{
 
@@ -317,14 +385,17 @@
         display: grid;
         grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
         gap: 0;
-
+        
         &--image{
            
             filter:drop-shadow(8px 8px 10px gray) brightness(1.2);
             transition: all 0.5s ease;
-            position: relative;
+            @include respond(phone){
+              
+                
+            }
            
-
+           
            
 
             & img{
@@ -332,11 +403,12 @@
                 width:100%;
                 height: auto;
                 transition: transform .5s ease;
-                position: relative;
+                
                 @include respond(tab-land){
-                    width: 50%; 
+                    width: 100%; 
                     
                 }
+                
 
                 
             }
@@ -371,7 +443,15 @@
               
 }
 
+.mobilebox-img{
 
+    @include respond(phone){
+        width: 100%; 
+        
+    }
+
+
+}
 
 
 

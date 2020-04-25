@@ -22,13 +22,17 @@
     transition: .5s ease-in-out;
     cursor: pointer;
 
+    @include respond(tab-land){
+        top: 4rem;
+           
+       }
 
             & span{
                
             display: block;
             position: fixed;
             height: 4px;
-            width: 90%;
+            width: 100%;
             
             background: linear-gradient(to left, #BC3E78, #AA1D5C);
             //border-radius: 1rem;
