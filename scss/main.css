@@ -848,7 +848,7 @@ li {
   width: 3.0rem;
   height: 2.0rem;
   position: fixed;
-  top: 2rem;
+  top: 4rem;
   right: 5rem;
   z-index: 1400;
   -webkit-transform: rotate(0deg);
@@ -918,13 +918,30 @@ li {
   top: 0%;
   right: 0%;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #ffffffbe;
   -webkit-box-shadow: inset 2px 2px 5px #c7b5b5, inset -5px -5px 10px #ffffff;
           box-shadow: inset 2px 2px 5px #c7b5b5, inset -5px -5px 10px #ffffff;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   position: fixed;
   padding: 15rem 5rem 0 5rem;
+}
+
+.nav__mobile-container::before {
+  z-index: 1100;
+  text-transform: uppercase;
+  top: 0%;
+  right: 0%;
+  height: 100vh;
+  background-color: #ffffffbe;
+  -webkit-box-shadow: inset 2px 2px 5px #c7b5b5, inset -5px -5px 10px #ffffff;
+          box-shadow: inset 2px 2px 5px #c7b5b5, inset -5px -5px 10px #ffffff;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  position: fixed;
+  padding: 15rem 5rem 0 5rem;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
 .nav__mobile-container a {
@@ -979,7 +996,7 @@ li {
   background-clip: text;
   text-align: center;
   padding: 7rem 23rem;
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 @media (max-width: 75em) {
@@ -1021,7 +1038,7 @@ li {
 }
 
 .booking-form {
-  background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.466) 0%, rgba(255, 255, 255, 0.8) 85%, transparent 50%), url(/image/form.jpg);
+  background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.466) 0%, rgba(255, 255, 255, 0.8) 55%, transparent 50%), url(/image/form.jpg);
   background-size: cover;
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
@@ -1683,7 +1700,7 @@ li.pagination__list-item {
 @media (max-width: 37.5em) {
   .s1 {
     padding: 3rem 4rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.301);
+    border-bottom: 5px solid black;
   }
 }
 
@@ -1851,6 +1868,7 @@ li.pagination__list-item {
   background-color: #F1F4F8;
   padding: 7rem 23rem;
   overflow-x: hidden;
+  border-top: 10px solid rgba(97, 97, 97, 0.2);
 }
 
 @media (max-width: 50em) {

@@ -1254,6 +1254,7 @@ $(document).ready(function(){
 		$('.nav__mobile-container').toggleClass('show');
 		$('.nav__mobile-container').toggleClass('hide');
 		$('.nav__link').toggleClass('expand');
+		
 
 	});
 

@@ -4,7 +4,7 @@
 
 .s1{
 
-
+   
     @include primary-padding;
     background-color: #F1F4F8;
     overflow-x: hidden;
@@ -16,7 +16,7 @@
                     @include respond(phone){
                         @include primary-phone-padding;
                         
-                        border-bottom: 2px solid rgba(0, 0, 0, 0.301);
+                        border-bottom: 5px solid rgb(0, 0, 0);
                     }
 
    
@@ -178,6 +178,7 @@
     background-color:#F1F4F8 ;
     @include primary-padding;
     overflow-x: hidden; 
+    border-top: 10px solid rgba(97, 97, 97, 0.2);
     @include respond(tab-port){
         @include primary-tab-padding;
        
