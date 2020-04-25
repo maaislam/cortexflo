@@ -1259,8 +1259,9 @@ $(document).ready(function(){
 	});
 
 	$( '.nav__mobile-aboutMe, .nav__mobile-projects,.nav__mobile-connectWithMe, .nav__mobile-testimonials, .nav__mobile-contact, .nav__mobile-resume').click(function () { 
-		
+		$('.nav__link').toggleClass('expand');
 		$('.nav__mobile-container').addClass('hide');
+		
 		$('.nav__mobile').toggleClass('open');
 	
 		
@@ -1287,11 +1288,12 @@ $(document).ready(function(){
 				
 				$('.nav').removeClass('nav-link');
 				$('.nav__logo-container').removeClass('nav-logo');
-				
+			
 			} else {
 				
 				$('.nav').addClass('nav-link');
 				$('.nav__logo-container').addClass('nav-logo');
+				
 			}
 		});
 	});

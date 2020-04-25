@@ -16,7 +16,7 @@
                     @include respond(phone){
                         @include primary-phone-padding;
                         
-                        border-bottom: 5px solid rgb(0, 0, 0);
+                       
                     }
 
    
@@ -186,19 +186,23 @@
        
        @include respond(phone){
         @include primary-phone-padding;
-        text-align: center;
+        text-align: left;
+
        
         border-bottom: 2px solid rgba(0, 0, 0, 0.301);
     }
 
     &__heading{
-
+            text-align: center;
        
-        text-align: center;
+        
 
         & > *{
             padding-bottom: 2rem;
-           
+            @include respond(phone){
+              padding-bottom: 3rem;
+            }
+        
         }
 
         & h2{
@@ -224,7 +228,10 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
    
-
+        @include respond(phone){
+            padding-top: 0rem;
+        }
+    
         &--col1-of-3{
             
             & > *{
@@ -239,6 +246,11 @@
 
 
         &--col2-of-3{
+
+            @include respond(phone){
+               padding-left: 7rem;
+                  
+              }
 
             & img{
                filter:drop-shadow(8px 8px 10px gray) brightness(1.2);
@@ -292,7 +304,11 @@
             font-size: 1.6rem;
             text-transform: uppercase;
             
-            
+            @include respond(phone){
+       
+                font-size: 2.2rem;
+       
+            }
         }
 
        
@@ -300,7 +316,7 @@
 
     .feature__more, .feature__more2{
 
-
+        
         & img{
             filter:drop-shadow(8px 8px 10px gray) brightness(1.2);
             padding-top: 2rem;
