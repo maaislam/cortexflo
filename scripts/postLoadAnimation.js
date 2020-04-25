@@ -1258,14 +1258,7 @@ $(document).ready(function(){
 
 	});
 
-	$( '.nav__mobile-aboutMe, .nav__mobile-projects,.nav__mobile-connectWithMe, .nav__mobile-testimonials, .nav__mobile-contact, .nav__mobile-resume').click(function () { 
-		$('.nav__link').toggleClass('expand');
-		$('.nav__mobile-container').addClass('hide');
-		
-		$('.nav__mobile').toggleClass('open');
-	
-		
-	});
+
 
 	$('.pagination__list-item a').on("click", function () {
 
