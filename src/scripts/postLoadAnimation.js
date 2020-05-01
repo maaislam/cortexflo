@@ -1303,11 +1303,13 @@ $(document).ready(function(){
 				
 				$('.nav').removeClass('nav-link');
 				$('.nav__logo-container').removeClass('nav-logo');
+				$('.nav__mobile').removeClass('nav-ham-menu');
 			
 			} else {
 				
 				$('.nav').addClass('nav-link');
 				$('.nav__logo-container').addClass('nav-logo');
+				$('.nav__mobile').addClass('nav-ham-menu');
 				
 			}
 		});
