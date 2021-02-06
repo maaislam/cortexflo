@@ -1292,7 +1292,7 @@ li.pagination__list-item {
   width: 100vw;
   height: 100vh;
   padding-top: 30rem;
-  background-image: url(image/backgroundremoved/image-01-removebg.png);
+  background-image: url(../../image/backgroundremoved/image-01-removebg.png);
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: right 20% center;
@@ -2235,10 +2235,8 @@ li.pagination__list-item {
           justify-content: space-evenly;
   border-radius: 7px;
   background: linear-gradient(145deg, #e4e5e6, #ffffff);
-  -webkit-box-shadow: 8px 8px 16px #9a9b9c, 
- -8px -8px 16px #ffffff;
-          box-shadow: 8px 8px 16px #9a9b9c, 
- -8px -8px 16px #ffffff;
+  -webkit-box-shadow: 8px 8px 16px #9a9b9c,  -8px -8px 16px #ffffff;
+          box-shadow: 8px 8px 16px #9a9b9c,  -8px -8px 16px #ffffff;
 }
 
 .h-entry > * {
