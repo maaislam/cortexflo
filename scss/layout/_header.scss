@@ -1,95 +1,98 @@
 .header__landing {
 
 
-   
+
     position: relative;
     width: 100vw;
     height: 100vh;
     padding-top: 30rem;
     //background-image: url(/src/image/wave.svg);
-    background-image: url(/src/image/backgroundremoved/image-01-removebg.png);
-    
+    background-image: url(/image/backgroundremoved/image-01-removebg.png);
+
     //background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: right 20% center;
-    
-    @include respond(tab-port){
-      
+
+    @include respond(tab-port) {
+
         height: 70vh;
 
         background-size: 40%;
         background-position: right 10% bottom 25%;
-       }
-    @include respond(phone){
-       
+    }
+
+    @include respond(phone) {
+
         height: 100vh;
         background-size: 70%;
         background-position: center top 30%;
-        
-       }
-    
-  
 
-    
-
-    &-text {
-           position: absolute;
-           
-           top: 50%;
-           left: 20%;
-           transform: translate(-20%, -50%);
-
-  
-                     @include respond(tab-port){
-                       
-                        top: 70%;
-                        left: 20%;
-                        transform: translate(-20%, -70%);
-             
-
-                                    }           
-                     @include respond(phone){
-                         width: 100%;
-                        text-align: center;
-                        top: 85%;
-                        left: 50%;
-                        transform: translate(-50%, -85%);
-             
-
-                                    }           
     }
 
 
-    
-   
+
+
+
+    &-text {
+        position: absolute;
+
+        top: 50%;
+        left: 20%;
+        transform: translate(-20%, -50%);
+
+
+        @include respond(tab-port) {
+
+            top: 70%;
+            left: 20%;
+            transform: translate(-20%, -70%);
+
+
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -85%);
+
+
+        }
+    }
+
+
+
+
 
     &-text h1 {
-       
+
         text-transform: uppercase;
         font-weight: 600;
         padding-bottom: 2rem;
 
-      
+
 
     }
-                /*this is done to style auto typed text*/
-                #typed{
-                  //  padding-bottom: 3.5rem;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    color: rgb(0, 0, 0);
 
-                    @include respond(tab-land){
-                        font-size: 2rem;
-                           
-                       }
-                    
-                }
-                  
-                
+    /*this is done to style auto typed text*/
+    #typed {
+        //  padding-bottom: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+
+        @include respond(tab-land) {
+            font-size: 2rem;
+
+        }
+
+    }
+
+
     &-text blockquote {
-       padding-top: 2rem;
+        padding-top: 2rem;
         padding-bottom: 5rem;
         text-transform: uppercase;
         font-weight: 500;
@@ -97,59 +100,59 @@
         color: rgb(0, 0, 0);
         width: 80%;
 
-       
-           
 
-        @include respond(tab-land){
-            
+
+
+        @include respond(tab-land) {}
+
+        @include respond(phone) {
+            width: 100%;
+            font-size: 2rem;
+            line-height: 4rem;
+            font-weight: 400;
+
         }
-         @include respond(phone){
-             width: 100%;
-             font-size: 2rem;
-             line-height: 4rem;
-             font-weight: 400;
-             
-         }
     }
 
 
     &-text h1 span {
         @include cortexflo-color;
-        
+
     }
-    
+
 
     &-text h4 {
-      
-        
+
+
         font-weight: 300;
         color: white;
         padding-bottom: 3.5rem;
-        
+
     }
 
-    &-text a{
+    &-text a {
         backface-visibility: hidden;
         position: relative;
         transition: all 0.5s;
-        &:first-child{
+
+        &:first-child {
             margin-right: 2rem;
         }
     }
 
 
 
-    .butn-container{
+    .butn-container {
         display: flex;
         align-items: center;
-        
-       
-        @include respond(phone){
-          
-           justify-content: center;
 
-               
-           }
+
+        @include respond(phone) {
+
+            justify-content: center;
+
+
+        }
     }
 
 
